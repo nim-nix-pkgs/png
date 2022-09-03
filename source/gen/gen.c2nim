@@ -1,0 +1,31 @@
+#def PNG_RESTRICT
+#def PNG_ALLOCATED
+#def PNG_NORETURN
+#def PNG_DEPRECATED
+//#assumendef PNG_EXPORT_TYPE
+//#assumendef PNG_FUNCTION
+//#assumendef PNG_EXPORTA
+//#assumendef PNG_EXPORT
+//#assumendef PNG_REMOVED
+//#assumendef PNG_CALLBACK
+#pp PNGARG
+#def PNGAPI
+#def PNGCAPI
+#def PNGCBAPI
+#def PNG_IMPEXP
+#def PNG_EXPORT_TYPE(type) type
+#pp PNG_EMPTY
+#assumendef PNG_SETJUMP_SUPPORTED
+#def PNG_LINKAGE_API extern
+#pp PNG_FUNCTION
+#pp PNG_EXPORTA
+#pp PNG_IMAGE_FAILED
+#pp PNG_IMAGE_WARNING
+#pp PNG_IMAGE_ERROR
+#pp PNG_EXPORT
+#pp PNG_REMOVED
+#pp PNG_CALLBACK
+#def PNG_FP_EXPORT(ordinal, type, name, args)\
+         PNG_EXPORT(ordinal, type, name, args);
+#def PNG_FIXED_EXPORT(ordinal, type, name, args)\
+         PNG_EXPORT(ordinal, type, name, args);
